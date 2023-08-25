@@ -24,3 +24,10 @@ export const Home=(userData)=>{
  }
 
 
+ export const addData=(userData)=>{
+  return{
+    type:"ADD_DATA",
+    payload:userData
+  }
+ }
+

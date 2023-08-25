@@ -1,7 +1,8 @@
 const initialState = {
     Home: "Home",
     About: "About",
-    Contact: "Contact"
+    Contact: "Contact",
+    input:" "
   };
   
   const reducer = (state = initialState, action) => {
@@ -12,10 +13,13 @@ const initialState = {
         return { ...state, About: state.About + action.payload };
       case "CONTACT":
         return { ...state, Contact: state.Contact + action.payload };
+        case "ADD_DATA":
+            return {...state,input:state.input + action.payload}
       default:
         return state;
     }
   };
+  
   
   export default reducer;
   
