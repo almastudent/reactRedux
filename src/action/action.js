@@ -1,23 +1,26 @@
-
-
-export const inCrement=()=>{
+export const Home=(userData)=>{
     return{
-        type:"INCREMENT"
+    type:"HOME",    
+      payload:userData
     }
-}
+     
+ }
+ 
 
-
-export const deCrement=()=>{
+ export const About=(userData)=>{
     return{
-        type:"DECREMENT"
+    type:"ABOUT",    
+      payload:userData
     }
-}
-
-
-
-export const backGround=(currentColor)=>{
+     
+ }
+ 
+ export const Contact=(userData)=>{
     return{
-        type:"CHANGE_COLOR",
-        payload:currentColor === 'yellow' ? 'white' : 'yellow'
+    type:"CONTACT",    
+      payload:userData
     }
-}
+     
+ }
+
+

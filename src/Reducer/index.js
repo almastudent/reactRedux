@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
-import { manipulateTheNumber } from "./reducer";
-
-
- export const rootReducer=combineReducers({
-    manipulateTheNumber:manipulateTheNumber
-})
+import reducer from "./CreatReducer";
 
 
 
+const rootReducer = combineReducers({
+    reducer
+});
 
+
+export default rootReducer;
