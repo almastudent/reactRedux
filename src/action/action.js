@@ -1,7 +1,7 @@
 export const Home=(userData)=>{
     return{
     type:"HOME",    
-      payload:userData
+    payload:userData
     }
      
  }
